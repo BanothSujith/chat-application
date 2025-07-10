@@ -13,5 +13,8 @@ router.post("/register", register);
 router.get("/allusers/:id", getAllUsers);
 router.post("/setavatar/:id", setAvatar);
 router.get("/logout/:id", logOut);
+router.get("/",(req,res)=>{
+  res.send("Auth route is working");
+})
 
 module.exports = router;
